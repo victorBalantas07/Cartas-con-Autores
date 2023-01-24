@@ -1,0 +1,70 @@
+.App {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    padding: 10px;
+    animation: fanimado 10s infinite;
+}
+
+.quoteBox {
+    background-color: rgb(186, 182, 182);
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 2px 2px 8px rgb(41, 38, 38);
+    
+}
+
+.quoteBox-author {
+    text-align: right;
+    margin: 15px 0;
+}
+
+.quoteButtom {
+    font-size: 40px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 auto;
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+
+.quoteButtom:hover {
+    transform: scale(1.4);
+}
+
+.quoteBox-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 55px;
+    cursor: pointer;
+
+}
+
+.quoteBox-icon:hover {
+    transform: scale(1.4);
+}
+
+@keyframes fanimado{
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    
+    }
+    100% {
+        background-position: 50% 0;
+    }
+}
